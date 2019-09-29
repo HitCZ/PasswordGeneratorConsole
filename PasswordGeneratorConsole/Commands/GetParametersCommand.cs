@@ -7,18 +7,12 @@ using System.Windows.Input;
 
 namespace PasswordGeneratorConsole.Commands
 {
-    class GetParametersCommand : ICommand
+    internal class GetParametersCommand : Command
     {
-        public bool CanExecute(object parameter)
+
+        public override void Execute(params string[] parameters)
         {
             throw new NotImplementedException();
         }
-
-        public void Execute(object parameter)
-        {
-            throw new NotImplementedException();
-        }
-
-        public event EventHandler CanExecuteChanged;
     }
 }

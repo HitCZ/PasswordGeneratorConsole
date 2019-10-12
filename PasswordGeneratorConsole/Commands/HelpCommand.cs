@@ -3,15 +3,16 @@ using System;
 
 namespace PasswordGeneratorConsole.Commands
 {
-    internal class GetParametersCommand : Command
+    internal class HelpCommand : Command
     {
         #region Overriden Members
 
-        public override string CommandInput => CommandConstants.GetParameters;
-
+        public override string CommandInput => CommandConstants.Help;
+        
         public override void Execute(params string[] parameters)
         {
-            throw new NotImplementedException();
+            base.Execute(parameters);
+            
         }
 
         #endregion Overriden Members

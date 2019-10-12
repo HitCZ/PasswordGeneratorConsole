@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PasswordGeneratorConsole.Extensions
 {
@@ -14,9 +12,13 @@ namespace PasswordGeneratorConsole.Extensions
             return collection is null || !collection.Any();
         }
 
-        public static bool IsNullOrEmpty(this Array array)
+        public static bool IsNullOrEmpty(this Array array) => array is null || array.Length == 0;
+
+        public static bool IsNullOrEmpty<T>(this List<T> list) => list is null || !list.Any();
+
+        public static bool IsNullOrEmpty<TKey, TValue>(this Dictionary<TKey, TValue> dictionary)
         {
-            return array is null || array.Length == 0;
+            return dictionary is null || !dictionary.Any();
         }
     }
 }

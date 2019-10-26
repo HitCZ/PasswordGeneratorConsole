@@ -29,6 +29,7 @@ namespace PasswordGeneratorConsole.Infrastructure.Comparers
                 throw new ArgumentNullException(nameof(x));
             if (y is null)
                 throw new ArgumentNullException(nameof(y));
+
             if (x.Count != y.Count)
                 return false;
 

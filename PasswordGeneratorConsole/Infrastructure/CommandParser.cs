@@ -1,4 +1,4 @@
-﻿using PasswordGeneratorConsole.Commands;
+﻿using PasswordGeneratorConsole.Commands.Base_classes;
 using PasswordGeneratorConsole.Extensions;
 using System;
 using System.Collections.Generic;

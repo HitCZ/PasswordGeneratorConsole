@@ -1,5 +1,6 @@
 ﻿using PasswordGeneratorConsole.Infrastructure.Constants;
 using System;
+using PasswordGeneratorConsole.Commands.Base_classes;
 
 namespace PasswordGeneratorConsole.Commands
 {

@@ -1,4 +1,4 @@
-﻿using PasswordGeneratorConsole.Commands;
+﻿using PasswordGeneratorConsole.Commands.Base_classes;
 using PasswordGeneratorConsole.Exceptions;
 using PasswordGeneratorConsole.Extensions;
 using PasswordGeneratorConsole.Infrastructure;
@@ -25,6 +25,7 @@ namespace PasswordGeneratorConsole
                 {
                     if (!TryParseCommand(input, out var parsedCommand, out var parsedParameters))
                         continue;
+                    
                     ExecuteCommand(parsedCommand, parsedParameters);
                 }
             }

@@ -8,5 +8,9 @@ namespace PasswordGeneratorConsole.Exceptions
             : base($"Invalid parameters: \"{string.Join(", ", parameters)}\".")
         {
         }
+
+        public InvalidCommandParametersException() : base($"Invalid parameters.")
+        {
+        }
     }
 }

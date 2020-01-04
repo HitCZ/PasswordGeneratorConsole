@@ -37,7 +37,6 @@ namespace PasswordGeneratorConsole.Commands
 
         public override string CommandInput { get; } = "params";
 
-
         public override void Execute(params string[] parameters)
         {
             base.Execute(parameters);
@@ -87,7 +86,9 @@ namespace PasswordGeneratorConsole.Commands
 
         private void HandleParameterWithModifiers(PasswordParameters pwParameters, string[] parameters)
         {
-            if (pwParameters is null || parameters.IsNullOrEmpty() || parameters.Length <= 1 || parameters.Any(p => p.IsNullOrEmpty()))
+            if (pwParameters is null || parameters.IsNullOrEmpty() 
+                                     || parameters.Length <= 1 
+                                     || parameters.Any(p => p.IsNullOrEmpty()))
                 return;
 
             var firstParam = parameters.First();

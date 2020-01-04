@@ -13,7 +13,7 @@ namespace PasswordGeneratorConsole.Extensions
             var sb = new StringBuilder();
             sb.AppendLine("Current Parameters:");
             sb.AppendLine(GetLengthSummary(parameters));
-            sb.Append(GetAlphabetSummary(parameters));
+            sb.AppendLine(GetAlphabetSummary(parameters));
             sb.AppendLine(GetNumbersSummary(parameters));
             sb.AppendLine(GetSpecialCharsSummary(parameters));
 

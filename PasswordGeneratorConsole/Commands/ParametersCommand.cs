@@ -6,6 +6,7 @@ using PasswordGeneratorConsole.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using PasswordGeneratorConsole.Infrastructure.Constants;
 
 namespace PasswordGeneratorConsole.Commands
 {
@@ -35,7 +36,7 @@ namespace PasswordGeneratorConsole.Commands
 
         #region Command Members
 
-        public override string CommandInput { get; } = "params";
+        public override string CommandInput { get; } = CommandConstants.Parameters;
 
         public override void Execute(params string[] parameters)
         {
